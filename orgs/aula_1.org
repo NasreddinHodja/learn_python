@@ -1,0 +1,153 @@
+#+title: Aula 1
+
+* Intro: o que é programar?
+Não vamo fazer intro porque não precisa e confunde.
+
+Vamo cai de cabeça
+
+** Regras
+1. não tem
+2. me interrompe quando cê quiser
+   - eu quero que você expresse a mínima dúvida que brotar na cabeça
+   - as vezes eu não vou responder de cara porque a gente vai ver depois
+3. no momento que tu saturar *PEDE PRA PARAR A AULA*!!!!!!!
+4. bala no jansen bala no tota
+   - tira o coelho da cartola
+
+* Python serve pra q?
++ data science
+  - chato pra caralho
++ machine learning
+  - n me interessa
++ webdev (backend)
+  - yt, insta, dropbox, spotify...
+  - de boa até
++ automação
+  - eh
++ comer tua irmã
+  - sim
+
+* Primeiros passos irmão
+Tem que baixar umas paradas:
++ [[https://www.python.org/about/gettingstarted/][python for beginners]]
+  - lembrar de checkar "Add python to PATH"
++ [[https://code.visualstudio.com/][vscode]]
+  - baixar python plugin
+
+** Primeiro programa
+Vamo fazer um hello world e é isso valeu
+
+* Vars
++ data vs vars
++ paradigma da caixinha
+  - precisa disso? cê n lembra da escola n idiota?
++ vamo fazer nosso hello world dar hello pra uma pessoa específica
+  - vamo ver que criar uma var pra guardar o nome da pessoa pode ajudar
+
+** code
+#+begin_src python
+# int
+i = 5
+print(f"i = {i}")
+
+# float
+f = 1.5
+print(f"f = {f}")
+
+# string
+s = "vai toma no cu"
+print(f"s = {s}")
+
+# bool
+b = True
+print(f"b = {b}")
+#+end_src
+
+* exemplos
+Vou tentar seguir essa [[https://www.programiz.com/python-programming/examples][lista de exemplos]] e a gente vai aprendendo os conceitos ao longo da jornada beleza
++ beleza
+
+* operadores
+** aritmeticos
++ a gente tem os mesmos operadores da matemática
+  - =+= pra adição
+  - =-= subtração
+  - =*= multiplicar
+  - =/= dividir
+  - =**= potência
+
+*** code
+#+begin_src python
+x = 1 + 1
+print(x)
+
+s = "vai" + " " + "se fuder"
+print(s)
+
+x = 5 / 5
+print(x)
+
+x = 2 ** 4
+print(x)
+#+end_src
+
+** comparação
++ comparar 2 bagulho
+  - ~==~ igual
+  - ~!=~ não igual
+  - ~>~ maior e ~<~ menor
+  - ~>=~ maior ou igual ~<=~ menor ou igual
+
+** lógicos
++ pra comparar dois valores boleanos
+  - ~and~
+  - ~or~
+  - ~not~
+
+*** code
+#+begin_src python
+ta_choveno = False
+voce_e_coco = True
+
+print(ta_choveno and voce_e_coco)
+print(ta_choveno or voce_e_coco)
+print(not ta_choveno)
+#+end_src
+
+* funções
++ mesma ideia q na matemática
+
+#+begin_src python
+# definir
+def manda_se_fuder(nome):
+    print("vai de fuder " + nome)
+
+# chamar
+manda_se_fuder("matheus")
+
+# com retorno
+def soma(x, y):
+    return x + y
+
+soma(1, 2)
+#+end_src
+
+* pegar input do usuário
++ a gente já viu ~print()~ que é uma função q printa
++ tem uma função ~input()~ que printa um argumento e pega o input do usuário
+
+** exemplo
++ vamo converter kilometros pra milhas
+#+begin_src python
+kilometers = float(input("bota um valor em km aqui: "))
+
+conv_factor = 0.621371
+
+miles = kilometers * conv_factor
+
+print("valor em milhas: ", miles)
+#+end_src
++ refatorar código acima pra função pra função
+
+* mostrar trabalhos e scripts
++ yep
